@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
-       <ul>
-           <li><a href="#hero">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#skill">Skills</a></li>
-           <li><a href="#projects">Projects</a></li>
-           <li><a href="#contact">Contact</a></li>
-       </ul>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="toggle-dark-mode">Dark Button</button>
     </nav>
 
-    <section id="hero">   
+
+    <section id="login-section">
+        <h2>Welcome</h2>
+        <input type="password" id="admin-password" placeholder="password" />
+        <button id="login-button">login</button>
+        <p id="login-error" style="color:red;"></p>
+    </section>
+    <section id="admin-panel">
+        <h2>Admin Panel</h2>
+        <button id="enable-edit-mode">Enable Edit Mode</button>
+        <button id="save-all">Save</button>
+    </section>
+
+
+
+    <section id="hero">
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>Developer/2025</p>
             <a href="#projects" class="learn-button">Learn more</a>
         </div>
     </section>
-    
+
     <section id="about">
-            <h2>About me</h2>
+        <h2>About me</h2>
         <div class="about-content">
-            <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-88409-800.jpg" alt="profile-picture" class="profile-pic">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illo.</p>
+            <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-88409-800.jpg" alt="profile-picture"
+                class="profile-pic">
+            <p id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illo.</p>
         </div>
     </section>
 
@@ -37,22 +56,26 @@
         <h2>My Skills</h2>
         <div class="skills-grid">
             <div class="skill-grid">
-            <h3>HTML&CSS</h3>
-            <p>HTML CSS Expert in creating responsive, semantic, and visually appealing web interfaces.</p></div>
+                <h3>HTML&CSS</h3>
+                <p>HTML CSS Expert in creating responsive, semantic, and visually appealing web interfaces.</p>
             </div>
-            <div class="skill-grid">
+        </div>
+        <div class="skill-grid">
             <h3>JavaScript</h3>
-            <p>i will learn it soon</p></div>
-            </div>
-            <div class="skill-grid">
+            <p>i will learn it soon</p>
+        </div>
+        </div>
+        <div class="skill-grid">
             <h3>React</h3>
-            <p>i will learn it soon</p></div>
-            </div>
-            <div class="skill-grid">
+            <p>i will learn it soon</p>
+        </div>
+        </div>
+        <div class="skill-grid">
             <h3>UI/UX Design</h3>
-            <p>i will learn it soon</p></div>
-            </div>
-        </div>   
+            <p>i will learn it soon</p>
+        </div>
+        </div>
+        </div>
     </section>
 
     <section id="projects">
@@ -61,17 +84,17 @@
             <div class="project-grid">
                 <img src="https://via.placeholder.com/300x200?random=1" alt="Project 1">
                 <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis?</p>
+                <p id="project-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis?</p>
             </div>
             <div class="project-grid">
                 <img src="https://via.placeholder.com/300x200?random=2" alt="Project 2">
                 <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis?</p>
+                <p id="project-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis?</p>
             </div>
             <div class="project-grid">
                 <img src="https://via.placeholder.com/300x200?random=3" alt="Project 3">
                 <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis?</p>
+                <p id="project-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis?</p>
             </div>
 
         </div>
@@ -80,16 +103,17 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <form>
-            <input  type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea type="text" placeholder="Your Message" required></textarea>
 
-        <button type="submit">Send Message</button>
-    </form>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
-<footer>
-    <p>2025 My Portfolio. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>2025 My Portfolio. All rights reserved.</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -12,18 +12,23 @@ body {
 nav {
     background-color: #F7C6C7;
     position: fixed;
+    justify-content: center;
+    top: 0px;
+    align-items: center;
     width: 100%;
     padding: 2rem, 1rem;
     z-index: 100;
-    height: 2rem;
+    height: 3rem;
 }
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    gap: 20px;
+    padding: auto;
     list-style: none;
-    justify-content: flex-end;
-    margin-top: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 nav a {
@@ -36,6 +41,29 @@ nav a:hover {
     color: #FF6F61;
 }
 
+
+#toggle-dark-mode {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #FF6F61;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
 #hero {
     background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80") no-repeat center center/cover;
     height: 100vh;
@@ -45,7 +73,9 @@ nav a:hover {
     text-align: center;
     position: relative;
     color: white;
+    width: 100%;
 }
+
 
 .hero-content {
     text-align: center;
@@ -98,7 +128,8 @@ section h2 {
 
 .profile-pic {
     flex: 1;
-    max-width: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -214,4 +245,34 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 20px;
+}
+
+#admin-panel {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#login-section h2 {
+    margin-bottom: 20px;
+    color: #f25142;
+}
+
+#login-section input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
